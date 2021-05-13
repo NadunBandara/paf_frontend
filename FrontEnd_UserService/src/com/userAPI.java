@@ -34,11 +34,11 @@ public class userAPI extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) 
 			 throws ServletException, IOException 
 			{ 
-			 String output = userObj.insertuser(request.getParameter("uid"), 
-			 request.getParameter("uname"), 
-			request.getParameter("uemail"), 
-			request.getParameter("uphone")); 
-			 request.getParameter("upw"); 
+			 String output = userObj.insertuser(request.getParameter("userID"), 
+			 request.getParameter("userName"), 
+			request.getParameter("userEmail"), 
+			request.getParameter("userMobile")); 
+			 request.getParameter("userPW"); 
 			response.getWriter().write(output); 
 			}
 
@@ -49,11 +49,11 @@ public class userAPI extends HttpServlet {
 			{ 
 			 Map paras = getParasMap(request); 
 			 String output = userObj.updateuser(paras.get("hididSave").toString(), 
-			 paras.get("uid").toString(), 
-			 paras.get("uname").toString(), 
-			paras.get("uemail").toString(), 
-			paras.get("uphone").toString()); 
-			 paras.get("upw").toString();
+			 paras.get("userIDd").toString(), 
+			 paras.get("userName").toString(), 
+			paras.get("userEmail").toString(), 
+			paras.get("userMobile").toString()); 
+			 paras.get("userPW").toString();
 			response.getWriter().write(output); 
 			} 
 	
@@ -64,7 +64,7 @@ public class userAPI extends HttpServlet {
 			 throws ServletException, IOException 
 			{ 
 			 Map paras = getParasMap(request); 
-			 String output = userObj.deleteuser(paras.get("uid").toString()); 
+			 String output = userObj.deleteuser(paras.get("userId").toString()); 
 			response.getWriter().write(output); 
 			}
 
