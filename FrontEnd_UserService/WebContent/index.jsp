@@ -15,26 +15,26 @@ pageEncoding="ISO-8859-1"%>
 <h1>User Service Management</h1>
 
  <br> User ID: 
- <input id="uid" name="uid" type="text" required
+ <input id="uid" name="usetId" type="text" required
  class="form-control form-control-sm">
 
 
 <form id="formuser" name="formuser">
  User Name: 
- <input id="uname" name="uname" type="text" required
+ <input id="userName" name="userName" type="text" required
  class="form-control form-control-sm">
  
  <br> User Email: 
- <input id="uemail" name="uemail" type="email" required
+ <input id="userEmail" name="userEmail" type="email" required
  class="form-control form-control-sm">
  
  <br> User Mobile: 
- <input type="tel" id="uphone" name="uphone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required
+ <input type="userMobile" id="userMobile" name="uphone" placeholder="07********" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required
   class="form-control form-control-sm">
  
  
  <br> User Password:
- <input id="upw" name="upw" type="password" 
+ <input id="userPW" name="userPW" type="password" 
  class="form-control form-control-sm">
  
  <br>
